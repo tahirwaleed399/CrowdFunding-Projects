@@ -1,0 +1,67 @@
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    width: 100vw;
+}
+
+.green {
+    color: var(--moderatecyan);
+}
+
+.btn {
+    padding: 1.4rem 3rem;
+    background-color: var(--moderatecyan);
+    font-size: var(--small);
+    color: #fff;
+    text-align: center;
+    border: none;
+    border-radius: 35px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: background-color 0.3s ease-out;
+}
+
+.btn:hover {
+    background-color: var(--darkcyan);
+}
+
+.bookmarked span {
+    color: var(--moderatecyan);
+}
+
+.bookmarked circle {
+    fill: var(--moderatecyan);
+}
+
+.bookmarked:hover circle {
+    fill: var(--darkcyan);
+}
+
+.bamboo-btn {
+    padding: 1.9rem 3.5rem;
+}
+
+.overlay {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.72);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+p,
+span {
+    line-height: 2.4;
+}
+
+p {
+    color: var(--darkgray);
+}
+
+.overlay.active {
+    display: block;
+}
