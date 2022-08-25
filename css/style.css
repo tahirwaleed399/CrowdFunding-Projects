@@ -1,0 +1,752 @@
+                                                :root {
+                                                   --moderatecyan: hsl(176, 50%, 47%);
+                                                   --darkcyan: hsl(176, 72%, 28%);
+                                                   --black: hsl(0, 0%, 0%);
+                                                   --darkgray: hsl(0, 0%, 48%);
+                                                   --small: 1.4rem;
+                                                   --normal: 2.2rem;
+                                                   --large: 3.2rem;
+                                                   --mainwidth: 700px;
+                                               }
+                                               
+                                               h2,
+                                               h3 {
+                                                   font-size: var(--normal);
+                                                   font-weight: 700;
+                                               }
+                                               
+                                               * {
+                                                   list-style: none;
+                                                   text-decoration: none;
+                                                   padding: 0;
+                                                   margin: 0;
+                                                   box-sizing: border-box;
+                                               }
+                                               
+                                               html {
+                                                   font-size: 62.5%;
+                                                   overflow-x: hidden;
+                                                   scroll-behavior: smooth;
+                                               }
+                                               
+                                               body {
+                                                   font-family: 'Commissioner', sans-serif;
+                                                   background-color: #ebebeb;
+                                               }
+                                               
+                                               .bg {
+                                                   height: 400px;
+                                                   width: 100vw;
+                                                   background-image: url('/images/image-hero-desktop.jpg');
+                                                   background-position: center;
+                                                   background-size: cover;
+                                                   position: absolute;
+                                                   top: 0;
+                                                   z-index: -1;
+                                               }
+                                               
+                                               .cross,
+                                               .hamburger,
+                                               .hi {
+                                                   display: none;
+                                               }
+                                               
+                                               nav {
+                                                   padding: 48px 0;
+                                                   display: flex;
+                                                   justify-content: space-around;
+                                                   align-items: center;
+                                                   font-family: 'Commissioner', sans-serif;
+                                                   position: relative;
+                                                   z-index: 100;
+                                               }
+                                               
+                                               .logo {
+                                                   height: 2rem;
+                                               }
+                                               
+                                               .links {
+                                                   display: flex;
+                                                   font-size: 1.5rem;
+                                                   align-items: center;
+                                               }
+                                               
+                                               .links li {
+                                                   color: #fff;
+                                                   transition: color .3s ease-out;
+                                               }
+                                               
+                                               .links li:hover {
+                                                   color: var(--moderatecyan);
+                                                   cursor: pointer;
+                                               }
+                                               
+                                               li:nth-child(2) {
+                                                   margin: 0 32px;
+                                               }
+                                               /* ************************************************8 */
+                                               
+                                               .box {
+                                                   margin-top: 180px;
+                                                   background-color: #fff;
+                                                   position: relative;
+                                                   padding: 6rem 5rem;
+                                                   border-radius: 10px;
+                                                   width: var(--mainwidth);
+                                                   font-family: 'Commissioner', sans-serif;
+                                               }
+                                               
+                                               .box-logo {
+                                                   position: absolute;
+                                                   height: 57px;
+                                                   top: -30px;
+                                                   left: 50%;
+                                                   transform: translateX(-50%);
+                                               }
+                                               
+                                               .box-logo img {
+                                                   width: 100%;
+                                               }
+                                               
+                                               .box h1 {
+                                                   font-size: var(--normal);
+                                                   font-weight: bold;
+                                                   text-align: center;
+                                                   margin-bottom: 2rem;
+                                               }
+                                               
+                                               .box p {
+                                                   color: var(--darkgray);
+                                                   text-align: center;
+                                                   font-size: var(--small);
+                                               }
+                                               
+                                               .buttons {
+                                                   margin-top: 4rem;
+                                                   display: flex;
+                                                   justify-content: space-between;
+                                               }
+                                               
+                                               .bookmark {
+                                                   display: flex;
+                                                   align-items: center;
+                                                   background-color: #ebebeb;
+                                                   font-size: var(--small);
+                                                   align-items: center;
+                                                   cursor: pointer;
+                                                   border-radius: 8rem;
+                                               }
+                                               
+                                               .bookmark span {
+                                                   padding: 1.7rem 2.3rem;
+                                                   font-size: var(--small);
+                                                   color: var( --darkgray);
+                                                   font-weight: 700;
+                                               }
+                                               
+                                               .bookmark circle,
+                                               .bookmark path {
+                                                   transition: fill 0.3s ease-in-out;
+                                               }
+                                               
+                                               .bookmark:hover circle {
+                                                   fill: hsl(0, 0%, 35%);
+                                               }
+                                               
+                                               .bookmark path {
+                                                   fill: #fff;
+                                               }
+                                               /* ***********************************************? */
+                                               
+                                               .number-box {
+                                                   padding: 5rem;
+                                                   background-color: #fff;
+                                                   width: var(--mainwidth);
+                                                   margin: 2.7rem 0;
+                                               }
+                                               
+                                               .numbers {
+                                                   display: flex;
+                                                   align-items: center;
+                                                   font-family: 'Commissioner', sans-serif;
+                                               }
+                                               
+                                               hr {
+                                                   margin: 0 5rem;
+                                                   color: var(--darkgray);
+                                                   height: 6rem;
+                                               }
+                                               
+                                               .number span {
+                                                   font-weight: 800;
+                                                   font-size: var(--large);
+                                               }
+                                               
+                                               .number p {
+                                                   font-size: var(--small);
+                                                   margin-top: 1.3rem;
+                                                   color: var(--darkgray);
+                                               }
+                                               
+                                               .bar {
+                                                   background-color: #ebebeb;
+                                                   border-radius: 10px;
+                                                   width: 100%;
+                                                   height: var(--small);
+                                                   position: relative;
+                                                   margin: 4rem 0 0 0;
+                                               }
+                                               
+                                               .inner-bar {
+                                                   position: absolute;
+                                                   top: 0;
+                                                   left: 0;
+                                                   border-radius: inherit;
+                                                   background-color: var(--moderatecyan);
+                                                   height: 100%;
+                                                   width: 5%;
+                                               }
+                                               /* ************************************************************************************* */
+                                               
+                                               .bamboos {
+                                                   background-color: #fff;
+                                                   padding: 5rem;
+                                                   width: var(--mainwidth);
+                                                   font-family: 'Commissioner', sans-serif;
+                                               }
+                                               
+                                               .bamboos p {
+                                                   font-size: var(--small);
+                                                   color: var(--darkgray);
+                                                   line-height: 2;
+                                               }
+                                               
+                                               #para1 {
+                                                   margin: 4rem 0;
+                                               }
+                                               
+                                               .bamboo-box {
+                                                   margin: 2.5rem 0;
+                                                   padding: 4rem 3rem;
+                                                   border: 1px solid #e9e9e9;
+                                                   border-radius: 1rem;
+                                               }
+                                               
+                                               .bamboo-para {
+                                                   margin: 4rem 0;
+                                               }
+                                               
+                                               .bamboo-detail {
+                                                   display: flex;
+                                                   justify-content: space-between;
+                                               }
+                                               
+                                               .bamboo-selection {
+                                                   display: flex;
+                                                   justify-content: space-between;
+                                               }
+                                               
+                                               .bamboo-selection p {
+                                                   margin-left: .5rem;
+                                               }
+                                               
+                                               .left {
+                                                   display: flex;
+                                               }
+                                               
+                                               .required {
+                                                   font-size: var(--small);
+                                                   color: var(--moderatecyan);
+                                                   font-weight: 700;
+                                               }
+                                               
+                                               .left-q {
+                                                   font-size: 25px;
+                                               }
+                                               
+                                               .modal {
+                                                   background-color: white;
+                                                   height: 80vh;
+                                                   position: fixed;
+                                                   top: 50%;
+                                                   left: 50%;
+                                                   width: var(--mainwidth);
+                                                   overflow-y: scroll;
+                                                   border-radius: 10px;
+                                                   transform: scale(0.8) translate(-50%, -50%);
+                                                   opacity: 0;
+                                                   pointer-events: none;
+                                                   transition-property: opacity, transform;
+                                                   transition-duration: 0.5s;
+                                                   transition-timing-function: ease;
+                                                   z-index: 3;
+                                                   padding: 5rem;
+                                                   font-size: var(--small);
+                                                   scroll-behavior: smooth;
+                                                   font-family: 'Commissioner', sans-serif;
+                                               }
+                                               
+                                               .modal.active {
+                                                   opacity: 1;
+                                                   transform: scale(1) translate(-50%, -50%);
+                                                   pointer-events: all;
+                                               }
+                                               
+                                               .modal::-webkit-scrollbar {
+                                                   display: none;
+                                               }
+                                               
+                                               .modal h1 {
+                                                   font-size: var(--normal);
+                                               }
+                                               
+                                               .cross-btn {
+                                                   position: absolute;
+                                                   top: 20px;
+                                                   right: 20px;
+                                                   cursor: pointer;
+                                                   padding-top: 10px;
+                                               }
+                                               
+                                               .cross-btn path {
+                                                   transition: opacity 0.3s cubic-bezier(0.215, 0.610, 0.355, 1);
+                                               }
+                                               
+                                               .cross-btn:hover path {
+                                                   opacity: 1;
+                                               }
+                                               
+                                               .modal-box {
+                                                   border: 1px solid rgba(0, 0, 0, 0.2);
+                                                   border-radius: 1rem;
+                                                   position: relative;
+                                                   margin: 2.2rem 0;
+                                               }
+                                               
+                                               .modal-box p {
+                                                   margin-top: 2rem;
+                                               }
+                                               
+                                               .modal-para {
+                                                   margin: 3rem 0;
+                                                   font-size: var(--small);
+                                                   color: var(--darkgray);
+                                               }
+                                               
+                                               .modal-content {
+                                                   padding: 3rem;
+                                                   font-family: 'Commissioner', sans-serif;
+                                               }
+                                               
+                                               input[type="radio"] {
+                                                   display: none;
+                                               }
+                                               
+                                               .circle {
+                                                   height: 24px;
+                                                   width: 24px;
+                                                   border: 1px solid #000;
+                                                   border-radius: 50%;
+                                                   position: relative;
+                                                   transition: border-color 0.3s ease-out;
+                                               }
+                                               
+                                               .circle::after {
+                                                   content: "";
+                                                   position: absolute;
+                                                   top: 3px;
+                                                   left: 3px;
+                                                   height: 16px;
+                                                   width: 16px;
+                                                   background-color: var(--moderatecyan);
+                                                   border-radius: 50%;
+                                                   transform: scale(0);
+                                                   transition: transform 0.3s ease-in;
+                                               }
+                                               
+                                               .modal-box-details {
+                                                   display: flex;
+                                                   align-items: center;
+                                                   font-weight: 700;
+                                               }
+                                               
+                                               label {
+                                                   display: flex;
+                                                   align-items: center;
+                                                   cursor: pointer;
+                                               }
+                                               
+                                               label span {
+                                                   margin: 0 2rem;
+                                                   color: black;
+                                                   transition: color 0.3s ease-in;
+                                                   font-size: 14px;
+                                               }
+                                               
+                                               label:hover span {
+                                                   color: var(--moderatecyan);
+                                               }
+                                               
+                                               label:hover .circle {
+                                                   border-color: var(--moderatecyan);
+                                               }
+                                               
+                                               .modal-left {
+                                                   font-size: 1.99rem;
+                                                   font-weight: 700;
+                                                   position: absolute;
+                                                   top: 0;
+                                                   right: 13px;
+                                                   display: flex;
+                                                   align-items: center;
+                                               }
+                                               
+                                               .left-q {
+                                                   margin: 0;
+                                                   color: black;
+                                                   padding: 0;
+                                               }
+                                               
+                                               .modal-left span {
+                                                   font-size: 16px;
+                                                   color: var(--darkgray);
+                                                   font-weight: 500;
+                                               }
+                                               
+                                               .pledge {
+                                                   width: 95%;
+                                                   margin: auto;
+                                                   border-top: 1px solid var(--darkgray);
+                                                   opacity: 0;
+                                                   height: 0;
+                                                   transition-property: height;
+                                                   transition-duration: .5s;
+                                                   transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+                                                   color: var(--darkgray);
+                                                   font-family: 'Commissioner', sans-serif;
+                                               }
+                                               
+                                               .pledge-content {
+                                                   margin: 3.2rem 0;
+                                                   width: 100%;
+                                                   display: flex;
+                                                   /* flex-direction: column; */
+                                                   justify-content: space-between;
+                                                   align-items: center;
+                                               }
+                                               
+                                               .amount {
+                                                   display: flex;
+                                                   justify-content: space-between;
+                                                   position: relative;
+                                               }
+                                               
+                                               .pledge-btn {
+                                                   font: 500 16px/1 'Commissioner', sans-serif;
+                                                   padding: 2rem 1.6rem;
+                                                   border: none;
+                                                   border-radius: 2.8rem;
+                                                   outline: none;
+                                                   background-color: hsl(176, 50%, 47%);
+                                                   color: hsl(0, 0%, 100%);
+                                                   transition: background-color 0.25s ease;
+                                                   cursor: pointer;
+                                                   transition: background-color 0.3s;
+                                               }
+                                               
+                                               .pledge-btn:hover {
+                                                   background-color: var(--darkcyan);
+                                               }
+                                               
+                                               .pledge-input {
+                                                   font: 500 1.6rem/1 'Commissioner', sans-serif;
+                                                   color: hsl(0, 0%, 0%);
+                                                   width: 50%;
+                                                   padding: 1.25rem 1.25rem 1.25rem 3.5rem;
+                                                   outline: none;
+                                                   border-radius: 2.8rem;
+                                                   border: 1px solid hsl(0, 0%, 17%);
+                                                   height: 56px;
+                                                   transition: border-color 0.25s ease;
+                                                   margin-right: 10px;
+                                               }
+                                               
+                                               .pledge-input.error {
+                                                   border: 2px solid rgb(211, 0, 0);
+                                               }
+                                               
+                                               .amount::after {
+                                                   content: "$";
+                                                   position: absolute;
+                                                   top: 17.6px;
+                                                   left: 16px;
+                                                   font-size: 18px;
+                                                   color: var(--darkgray);
+                                               }
+                                               
+                                               .modal-box.active {
+                                                   border-color: black;
+                                               }
+                                               
+                                               .modal-box.active .modal-box-details label span {
+                                                   color: var(--moderatecyan);
+                                               }
+                                               
+                                               .modal-box.active .circle::after {
+                                                   transform: scale(1);
+                                               }
+                                               
+                                               .modal-box.active .pledge {
+                                                   height: auto;
+                                                   opacity: 1;
+                                               }
+                                               
+                                               .thanks {
+                                                   background-color: #fff;
+                                                   position: fixed;
+                                                   top: 50%;
+                                                   left: 50%;
+                                                   transform: scale(0.8) translate(-50%, -50%);
+                                                   padding: 5rem;
+                                                   text-align: center;
+                                                   width: 54.3rem;
+                                                   border-radius: 10px;
+                                                   transition-property: opacity, transform;
+                                                   transition-duration: 0.4s;
+                                                   transition-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+                                                   opacity: 0;
+                                                   pointer-events: none;
+                                                   font-family: 'Commissioner', sans-serif;
+                                               }
+                                               
+                                               .thanks.active {
+                                                   opacity: 1;
+                                                   transform: scale(1) translate(-50%, -50%);
+                                                   pointer-events: all;
+                                               }
+                                               
+                                               .thanks-logo {
+                                                   margin-bottom: 5rem;
+                                               }
+                                               
+                                               .thanks-logo img {
+                                                   height: 9rem;
+                                               }
+                                               
+                                               .thanks p {
+                                                   margin: 2rem 0;
+                                                   font-size: var(--small);
+                                               }
+                                               
+                                               .bamboo-box.inactive {
+                                                   opacity: 0.5;
+                                                   pointer-events: none;
+                                               }
+                                               
+                                               .modal-box.inactive {
+                                                   opacity: 0.5;
+                                                   pointer-events: none;
+                                               }
+                                               
+                                               @media (max-width:768px) {
+                                                    :root {
+                                                       --mainwidth: 95%;
+                                                   }
+                                                   .bg {
+                                                       background-image: url('/images/image-hero-mobile.jpg');
+                                                   }
+                                                   .hi {
+                                                       display: block;
+                                                       cursor: pointer;
+                                                       transition: transform 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+                                                   }
+                                                   .cross.active,
+                                                   .hamburger.active {
+                                                       transition: display 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+                                                       display: block;
+                                                   }
+                                                   .cross.inactive,
+                                                   .hamburger.inactive {
+                                                       display: none;
+                                                   }
+                                                   ul.links {
+                                                       position: fixed;
+                                                       left: 50%;
+                                                       top: -100%;
+                                                       flex-direction: column;
+                                                       text-align: left;
+                                                       align-items: flex-start;
+                                                       background-color: #fff;
+                                                       color: black;
+                                                       z-index: 100;
+                                                       width: 350px;
+                                                       border-radius: 15px;
+                                                       overflow: hidden;
+                                                       box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.24);
+                                                       transform: scale(0.1);
+                                                       opacity: 0;
+                                                       transition-property: top, transform, opacity;
+                                                       transition-duration: .2s;
+                                                       transition-timing-function: ease-in;
+                                                   }
+                                                   ul.links.active {
+                                                       transform: scale(1) translateX(-50%);
+                                                       opacity: 1;
+                                                       top: 7rem;
+                                                   }
+                                                   ul.links li {
+                                                       margin: 0;
+                                                       padding: 2.6rem 0;
+                                                       padding-right: 27rem;
+                                                       padding-left: 2rem;
+                                                       text-align: left;
+                                                       color: #000;
+                                                       font-weight: 700;
+                                                       font-size: 2rem;
+                                                       font-family: 'Commissioner', sans-serif;
+                                                   }
+                                                   ul.links li:nth-child(2) {
+                                                       border-bottom: 1px solid rgba(0, 0, 0, 0.24);
+                                                       border-top: 1px solid rgba(0, 0, 0, 0.205);
+                                                   }
+                                                   nav {
+                                                       padding: 28px 3rem;
+                                                       justify-content: space-between;
+                                                   }
+                                                   .bookmark span {
+                                                       display: none;
+                                                   }
+                                                   .number-box {
+                                                       padding: 2rem;
+                                                   }
+                                                   .numbers {
+                                                       flex-direction: column;
+                                                   }
+                                                   hr {
+                                                       margin: 0;
+                                                       color: var(--darkgray);
+                                                       height: unset;
+                                                       width: 10rem;
+                                                   }
+                                                   .number p {
+                                                       margin-top: 0;
+                                                   }
+                                                   .bamboo-detail {
+                                                       display: flex;
+                                                       flex-direction: column;
+                                                   }
+                                                   .bamboo-selection {
+                                                       display: flex;
+                                                       flex-direction: column;
+                                                   }
+                                                   .bamboo-selection button {
+                                                       margin-top: 1.5rem;
+                                                   }
+                                                   .modal-box p {
+                                                       margin-bottom: 5rem;
+                                                   }
+                                                   .modal-left {
+                                                       right: unset;
+                                                       top: unset;
+                                                       bottom: -40px;
+                                                       left: 15px;
+                                                   }
+                                                   .modal-box.active .modal-left {
+                                                       bottom: 119px;
+                                                   }
+                                                   .modal-box-details {
+                                                       flex-direction: column;
+                                                       align-items: flex-start;
+                                                   }
+                                                   .modal-box-details span.green {
+                                                       position: relative;
+                                                       left: 45px;
+                                                   }
+                                                   .pledge-content {
+                                                       font-size: 16px;
+                                                       flex-direction: column;
+                                                   }
+                                                   .pledge-content span {
+                                                       margin-bottom: 1rem;
+                                                   }
+                                                   label span {
+                                                       font-size: 18px;
+                                                   }
+                                                   .thanks {
+                                                       width: 90%;
+                                                   }
+                                                   .thanks-logo img {
+                                                       height: 5rem;
+                                                   }
+                                                   .thanks h2 {
+                                                       font-size: 2rem;
+                                                   }
+                                               }
+                                               
+                                               @media (max-width:500px) {
+                                                   .modal {
+                                                       padding: 2.5rem;
+                                                   }
+                                                   label span {
+                                                       font-size: 13px;
+                                                   }
+                                                   .pledge-input {
+                                                       padding: .1rem .1rem .1rem 3.5rem;
+                                                   }
+                                                   .pledge-btn {
+                                                       font-size: 1.3rem;
+                                                       padding: .7rem 2rem;
+                                                   }
+                                                   .box {
+                                                       padding: 3rem 2.5rem;
+                                                   }
+                                                   .bamboo-selection button {
+                                                       padding: 1.9rem 2.5rem;
+                                                   }
+                                                   .bamboo-box h3 {
+                                                       font-size: 1.7rem;
+                                                   }
+                                                   .bamboo-para {
+                                                       margin: 1rem 0;
+                                                   }
+                                               }
+                                               
+                                               @media (max-width:390px) {
+                                                   .modal-box span.green {
+                                                       font-size: 1.3rem;
+                                                   }
+                                                   label span {
+                                                       font-size: 1.1rem
+                                                   }
+                                                   .pledge-input {
+                                                       padding: .1rem .1rem .1rem 3.5rem;
+                                                   }
+                                                   .pledge-btn {
+                                                       font-size: .91rem;
+                                                       padding: .7rem 2.5rem;
+                                                   }
+                                                   .modal {
+                                                       padding: 1.5rem;
+                                                   }
+                                                   .bamboo-btn {
+                                                       padding: 1.9rem 2.5rem;
+                                                   }
+                                                   ul.links {
+                                                       width: 90%;
+                                                   }
+                                               }
+                                               
+                                               .shade {
+                                                   height: 100vh;
+                                                   width: 100vw;
+                                                   position: fixed;
+                                                   top: 0;
+                                                   left: 0;
+                                                   z-index: 1;
+                                                   pointer-events: none;
+                                                   transition: background 0.5s ease-in;
+                                               }
+                                               
+                                               .shade.active {
+                                                   background: linear-gradient(rgba(0, 0, 0, 0.8), transparent);
+                                               }
